@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pest Patrol</title>
 
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+}
+.logo {
+    color: #e53935;
+    font-weight: bold;
+}
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #003366;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    background: white;
+}
+.hero-text {
+    max-width: 500px;
+}
+.hero h1 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+.hero h2 {
+    color: #e53935;
+    font-size: 20px;
+}
+.hero p {
+    color: #555;
+}
+.buttons {
+    margin-top: 15px;
+}
+.btn {
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.btn-red {
+    background: #e53935;
+    color: white;
+}
+.btn-blue {
+    background: #003366;
+    color: white;
+}
+.hero img {
+    width: 350px;
+}
+
+/* BLUE FEATURE BAR */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.feature-box i {
+    color: #e53935;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* SECTION */
+.section {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    background: white;
+}
+.section img {
+    width: 300px;
+}
+.section h2 {
+    color: #003366;
+}
+.section button {
+    background: #e53935;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+.card {
+    background: white;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    border-radius: 6px;
+}
+.card img {
+    width: 100%;
+}
+.card i {
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero, .section, .cards {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img {
+        margin-top: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo"><i class="fas fa-bug"></i> PEST PATROL</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Robot</a>
+        <a href="#">Technology</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>PestPatrol:</h1>
+        <h2>Robotic Pest Detection and Control System</h2>
+        <p>An automated robot that detects and sprays pests efficiently.</p>
+        <div class="buttons">
+            <button class="btn btn-red">Learn More</button>
+            <button class="btn btn-blue">See Our Robot</button>
+        </div>
+    </div>
+    <img src="robot.png" alt="Robot">
+</div>
+
+<!-- FEATURE BAR -->
+<div class="features">
+    <div class="feature-box">
+        <i class="fas fa-leaf"></i>
+        Reduce Chemicals
+    </div>
+    <div class="feature-box">
+        <i class="fas fa-clock"></i>
+        Save Time & Labor
+    </div>
+    <div class="feature-box">
+        <i class="fas fa-seedling"></i>
+        Increase Yield
+    </div>
+    <div class="feature-box">
+        <i class="fas fa-shield-alt"></i>
+        Safe & Reliable
+    </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<div class="section">
+    <img src="robot.png">
+    <div>
+        <h2>About Our Robot</h2>
+        <p>This robot helps farmers detect pests and spray automatically using smart technology.</p>
+        <button>Discover More</button>
+    </div>
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+    <div class="card">
+        <i class="fas fa-robot"></i>
+        <img src="robot.png">
+        <h3>Smart Detection</h3>
+    </div>
+    <div class="card">
+        <i class="fas fa-spray-can"></i>
+        <img src="robot.png">
+        <h3>Precise Spraying</h3>
+    </div>
+    <div class="card">
+        <i class="fas fa-bolt"></i>
+        <img src="robot.png">
+        <h3>Efficient Power</h3>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Pest Patrol | All Rights Reserved
+</div>
+
+</body>
+</html>
